@@ -1,0 +1,84 @@
+int __fastcall ZN14LoginOkMessage6encodeEv(int a1, int a2, int a3)
+{
+  int v4; // r0
+  _DWORD *v5; // r0
+  int v6; // r6
+  int v7; // r0
+  _DWORD *v8; // r0
+  int v9; // r6
+
+  ZN14PiranhaMessage6encodeEv(a1, a2, a3);
+  ZN15ChecksumEncoder9writeLongEPK9LogicLong(a1 + 8, *(_DWORD *)(a1 + 80));
+  ZN15ChecksumEncoder9writeLongEPK9LogicLong(a1 + 8, *(_DWORD *)(a1 + 84));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 88));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 92));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 96));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 108));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 112));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 116));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 120));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 124));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 128));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 132));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 104));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 136));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 140));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 144));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 100));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 148));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 152));
+  ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(a1 + 176));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 156));
+  v4 = *(_DWORD *)(a1 + 168);
+  if ( v4 )
+  {
+    ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(v4 + 8));
+    v5 = *(_DWORD **)(a1 + 168);
+    if ( (int)v5[2] >= 1 )
+    {
+      v6 = 0;
+      do
+      {
+        ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(*v5 + 4 * v6));
+        v5 = *(_DWORD **)(a1 + 168);
+        ++v6;
+      }
+      while ( v6 < v5[2] );
+    }
+  }
+  else
+  {
+    ZN10ByteStream8writeIntEi(a1 + 8, -1);
+  }
+  v7 = *(_DWORD *)(a1 + 172);
+  if ( v7 )
+  {
+    ZN10ByteStream8writeIntEi(a1 + 8, *(_DWORD *)(v7 + 8));
+    v8 = *(_DWORD **)(a1 + 172);
+    if ( (int)v8[2] >= 1 )
+    {
+      v9 = 0;
+      do
+      {
+        ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(*v8 + 4 * v9));
+        v8 = *(_DWORD **)(a1 + 172);
+        ++v9;
+      }
+      while ( v9 < v8[2] );
+    }
+  }
+  else
+  {
+    ZN10ByteStream8writeIntEi(a1 + 8, -1);
+  }
+  ZN10ByteStream9writeVIntEi((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 188));
+  ZN21LogicCompressedString6encodeEPS_P15ChecksumEncoder(*(_DWORD *)(a1 + 180), a1 + 8);
+  ZN10ByteStream12writeBooleanEb(a1 + 8, *(unsigned __int8 *)(a1 + 184));
+  ZN10ByteStream12writeBooleanEb(a1 + 8, *(unsigned __int8 *)(a1 + 185) == 0);
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 160));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 192));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 164));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 196));
+  ZN10ByteStream11writeStringEPK6String((_DWORD *)(a1 + 8), *(_DWORD *)(a1 + 200));
+  return ZN10ByteStream12writeBooleanEb(a1 + 8, *(unsigned __int8 *)(a1 + 204));
+}

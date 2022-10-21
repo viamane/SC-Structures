@@ -1,0 +1,44 @@
+int __fastcall sub_2A57CC(int a1, int a2)
+{
+  int v4; // r6
+  int i; // r7
+  int v6; // r6
+  int j; // r7
+  int v8; // r6
+  int k; // r7
+
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)a1);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 4));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 72))(a2, *(_DWORD *)(a1 + 12));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 16));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 5));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 6));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 20));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 24));
+  writeDataReference(a2, *(_DWORD *)(a1 + 28));
+  v4 = *(_DWORD *)(*(_DWORD *)(a1 + 32) + 8);
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v4);
+  if ( v4 >= 1 )
+  {
+    for ( i = 0; i != v4; ++i )
+      sub_F37E0(*(_DWORD *)(**(_DWORD **)(a1 + 32) + 4 * i), a2); // team member entry
+  }
+  v6 = *(_DWORD *)(*(_DWORD *)(a1 + 36) + 8);
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v6);
+  if ( v6 >= 1 )
+  {
+    for ( j = 0; j != v6; ++j )
+      sub_6686CC(*(_DWORD *)(**(_DWORD **)(a1 + 36) + 4 * j), a2); // team invite entry
+  }
+  v8 = *(_DWORD *)(*(_DWORD *)(a1 + 40) + 8);
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v8);
+  if ( v8 >= 1 )
+  {
+    for ( k = 0; k != v8; ++k )
+      sub_52DF0C(*(_DWORD *)(**(_DWORD **)(a1 + 40) + 4 * k), a2); // team join request
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 44));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 45));
+  return (*(int (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 46));
+}

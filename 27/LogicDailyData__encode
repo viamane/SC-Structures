@@ -1,0 +1,168 @@
+_DWORD *__fastcall LogicDailyData6encode(int a1, int a2)
+{
+  int v4; // r6
+  int v5; // r6
+  int v6; // r6
+  int v7; // r6
+  _DWORD *v8; // r0
+  _DWORD *v9; // r0
+  _DWORD *v10; // r0
+  int v11; // r6
+  _DWORD *v12; // r0
+  int v13; // r6
+  int v14; // r6
+  int v15; // r6
+  int v16; // r6
+  int v17; // r6
+  int v18; // r6
+  _DWORD *v19; // r0
+  _DWORD *result; // r0
+
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)a1);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 4));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 12));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 16));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 20));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 24));
+  writeDataReference(a2, *(_DWORD *)(a1 + 28));
+  writeDataReference(a2, *(_DWORD *)(a1 + 32));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 44));
+  if ( *(int *)(a1 + 44) >= 1 )
+  {
+    v4 = 0;
+    do
+      (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 36) + 4 * v4++));
+    while ( v4 < *(_DWORD *)(a1 + 44) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 56));
+  if ( *(int *)(a1 + 56) >= 1 )
+  {
+    v5 = 0;
+    do
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 48) + 4 * v5++));
+    while ( v5 < *(_DWORD *)(a1 + 56) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 68));
+  if ( *(int *)(a1 + 68) >= 1 )
+  {
+    v6 = 0;
+    do
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 60) + 4 * v6++));
+    while ( v6 < *(_DWORD *)(a1 + 68) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 80));
+  if ( *(int *)(a1 + 80) >= 1 )
+  {
+    v7 = 0;
+    do
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 72) + 4 * v7++));
+    while ( v7 < *(_DWORD *)(a1 + 80) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 88));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 92));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 96));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 100));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 84));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 104));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 108));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 112));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 116));
+  ForcedDrops6encode(*(_DWORD **)(a1 + 120), a2);
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 124) != 0);
+  v8 = *(_DWORD **)(a1 + 124);
+  if ( v8 )
+    TimedOffer6encode(v8, a2);
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 128) != 0);
+  v9 = *(_DWORD **)(a1 + 128);
+  if ( v9 )
+    TimedOffer6encode(v9, a2);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 132));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 136));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 140));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 144));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 148));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 152));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 156) + 8));
+  v10 = *(_DWORD **)(a1 + 156);
+  if ( (int)v10[2] >= 1 )
+  {
+    v11 = 0;
+    do
+    {
+      LogicOfferBundle6encode(*(_DWORD *)(*v10 + 4 * v11), a2);
+      v10 = *(_DWORD **)(a1 + 156);
+      ++v11;
+    }
+    while ( v11 < v10[2] );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 160) + 8));
+  v12 = *(_DWORD **)(a1 + 160);
+  if ( (int)v12[2] >= 1 )
+  {
+    v13 = 0;
+    do
+    {
+      AdStatus6Encode(*(_DWORD **)(*v12 + 4 * v13), a2);
+      v12 = *(_DWORD **)(a1 + 160);
+      ++v13;
+    }
+    while ( v13 < v12[2] );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 164));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 168));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 180));
+  if ( *(int *)(a1 + 180) >= 1 )
+  {
+    v14 = 0;
+    do
+      (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 172) + 4 * v14++));
+    while ( v14 < *(_DWORD *)(a1 + 180) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 184));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 188));
+  writeDataReference(a2, *(_DWORD *)(a1 + 192));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 28))(a2, *(_DWORD *)(a1 + 200));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 28))(a2, *(_DWORD *)(a1 + 204));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 216));
+  if ( *(int *)(a1 + 216) >= 1 )
+  {
+    v15 = 0;
+    do
+      IntValueEntry(*(_DWORD **)(*(_DWORD *)(a1 + 208) + 4 * v15++), a2);
+    while ( v15 < *(_DWORD *)(a1 + 216) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 228));
+  if ( *(int *)(a1 + 228) >= 1 )
+  {
+    v16 = 0;
+    do
+      CooldownEntry(*(_DWORD **)(*(_DWORD *)(a1 + 220) + 4 * v16++), a2);
+    while ( v16 < *(_DWORD *)(a1 + 228) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 240));
+  if ( *(int *)(a1 + 240) >= 1 )
+  {
+    v17 = 0;
+    do
+      BrawlPassSeasonData(*(_DWORD *)(*(_DWORD *)(a1 + 232) + 4 * v17++), a2);
+    while ( v17 < *(_DWORD *)(a1 + 240) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 252));
+  if ( *(int *)(a1 + 252) >= 1 )
+  {
+    v18 = 0;
+    do
+      ProLeagueSeasonData(*(_DWORD **)(*(_DWORD *)(a1 + 244) + 4 * v18++), a2);
+    while ( v18 < *(_DWORD *)(a1 + 252) );
+  }
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 256) != 0);
+  v19 = *(_DWORD **)(a1 + 256);
+  if ( v19 )
+    LogicQuests(v19, a2);
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 260) != 0);
+  result = *(_DWORD **)(a1 + 260);
+  if ( result )
+    return (_DWORD *)LogicPlayerRankedSeasonData(result, a2);
+  return result;
+}

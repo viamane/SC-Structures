@@ -1,0 +1,17 @@
+_BYTE *__fastcall BattleLogMessage6encode(int a1)
+{
+  int v2; // r6
+  _BYTE *result; // r0
+  int i; // r7
+
+  PiranhaMessageEncode();
+  writeBoolean(a1 + 8, *(unsigned __int8 *)(a1 + 80));
+  v2 = *(_DWORD *)(*(_DWORD *)(a1 + 84) + 8);
+  result = writeVInt((_DWORD *)(a1 + 8), v2);
+  if ( v2 >= 1 )
+  {
+    for ( i = 0; i != v2; ++i )
+      result = (_BYTE *)BattleLogEntry6encode(*(_DWORD *)(**(_DWORD **)(a1 + 84) + 4 * i), a1 + 8);// battle log entry
+  }
+  return result;
+}

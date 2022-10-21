@@ -1,0 +1,13 @@
+m = 1 #Modification count 
+ByteStream::WriteVInt
+ByteStream::WriteVInt
+ByteStream::WriteVInt
+ByteStream::WriteVInt
+ByteStream::WriteVInt
+ByteStreamHelper::WriteDataReference #MapID
+ByteStream::WriteVInt
+ByteStream::WriteString
+ByteStream::WriteVInt
+ByteStream::WriteVInt(m) #count modificators
+for x in range(m):
+  ByteStream::WriteVInt #Modificator ID 

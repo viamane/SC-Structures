@@ -1,0 +1,164 @@
+int __fastcall DailyData(int a1, int a2)
+{
+  void (__fastcall *v4)(int, _DWORD); // r2
+  int v5; // r6
+  int v6; // r6
+  int v7; // r6
+  int v8; // r0
+  int v9; // r0
+  _DWORD *v10; // r0
+  int v11; // r6
+  _DWORD *v12; // r0
+  int v13; // r6
+  void (__fastcall *v14)(int, _DWORD); // r2
+  int v15; // r6
+  int v16; // r6
+  int v17; // r6
+  int v18; // r6
+  int result; // r0
+  int i; // r6
+
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)a1);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 4));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 12));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 16));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 20));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 24));
+  writeDataReference(a2, *(_DWORD *)(a1 + 28));
+  writeDataReference(a2, *(_DWORD *)(a1 + 32));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 44));
+  v4 = *(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64);
+  if ( *(int *)(a1 + 44) >= 1 )
+  {
+    v5 = 0;
+    do
+    {
+      v4(a2, *(_DWORD *)(*(_DWORD *)(a1 + 36) + 4 * v5++));
+      v4 = *(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64);
+    }
+    while ( v5 < *(_DWORD *)(a1 + 44) );
+  }
+  v4(a2, *(_DWORD *)(a1 + 56));
+  if ( *(int *)(a1 + 56) >= 1 )
+  {
+    v6 = 0;
+    do
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 48) + 4 * v6++));
+    while ( v6 < *(_DWORD *)(a1 + 56) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 68));
+  if ( *(int *)(a1 + 68) >= 1 )
+  {
+    v7 = 0;
+    do
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 60) + 4 * v7++));
+    while ( v7 < *(_DWORD *)(a1 + 68) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 76));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 80));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 84));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 74));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 88));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 72));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 92));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 96));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 100));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 104));
+  sub_450560(*(_DWORD *)(a1 + 108), a2);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 73));
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 112) != 0);
+  v8 = *(_DWORD *)(a1 + 112);
+  if ( v8 )
+    sub_2588D8(v8, a2);
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 116) != 0);
+  v9 = *(_DWORD *)(a1 + 116);
+  if ( v9 )
+    sub_2588D8(v9, a2);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 120));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 124));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 128));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 132));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 136));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 140));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 144) + 8));
+  v10 = *(_DWORD **)(a1 + 144);
+  if ( (int)v10[2] >= 1 )
+  {
+    v11 = 0;
+    do
+    {
+      sub_514398(*(_DWORD *)(*v10 + 4 * v11), a2);
+      v10 = *(_DWORD **)(a1 + 144);
+      ++v11;
+    }
+    while ( v11 < v10[2] );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(*(_DWORD *)(a1 + 148) + 8));
+  v12 = *(_DWORD **)(a1 + 148);
+  if ( (int)v12[2] >= 1 )
+  {
+    v13 = 0;
+    do
+    {
+      sub_229894(*(_DWORD *)(*v12 + 4 * v13), a2);
+      v12 = *(_DWORD **)(a1 + 148);
+      ++v13;
+    }
+    while ( v13 < v12[2] );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 152));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 156));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 168));
+  v14 = *(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64);
+  if ( *(int *)(a1 + 168) >= 1 )
+  {
+    v15 = 0;
+    do
+    {
+      v14(a2, *(_DWORD *)(*(_DWORD *)(a1 + 160) + 4 * v15++));
+      v14 = *(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64);
+    }
+    while ( v15 < *(_DWORD *)(a1 + 168) );
+  }
+  v14(a2, *(_DWORD *)(a1 + 172));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 176));
+  writeDataReference(a2, *(_DWORD *)(a1 + 180));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 28))(a2, *(_DWORD *)(a1 + 188));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 28))(a2, *(_DWORD *)(a1 + 192));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 204));
+  if ( *(int *)(a1 + 204) >= 1 )
+  {
+    v16 = 0;
+    do
+      sub_55378(*(_DWORD *)(*(_DWORD *)(a1 + 196) + 4 * v16++), a2);
+    while ( v16 < *(_DWORD *)(a1 + 204) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 216));
+  if ( *(int *)(a1 + 216) >= 1 )
+  {
+    v17 = 0;
+    do
+      sub_499878(*(_DWORD *)(*(_DWORD *)(a1 + 208) + 4 * v17++), a2);
+    while ( v17 < *(_DWORD *)(a1 + 216) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 228));
+  if ( *(int *)(a1 + 228) >= 1 )
+  {
+    v18 = 0;
+    do
+      sub_14BFE8(*(_DWORD *)(*(_DWORD *)(a1 + 220) + 4 * v18++), a2);
+    while ( v18 < *(_DWORD *)(a1 + 228) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 240));
+  result = *(_DWORD *)(a1 + 240);
+  if ( result >= 1 )
+  {
+    for ( i = 0; i < result; ++i )
+    {
+      sub_2AB5C8(*(_DWORD *)(*(_DWORD *)(a1 + 232) + 4 * i), a2);
+      result = *(_DWORD *)(a1 + 240);
+    }
+  }
+  return result;
+}

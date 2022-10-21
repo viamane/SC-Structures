@@ -1,0 +1,81 @@
+int __fastcall ClientHome(int a1, int a2)
+{
+  int v4; // r7
+  int v5; // r6
+  int v6; // r0
+  int v7; // r0
+  _DWORD *v8; // r0
+  int v9; // r6
+  int v10; // r6
+  int v11; // r6
+  int *v12; // r7
+  int result; // r0
+
+  sub_51D350(*(_DWORD *)(a1 + 12));             // prob daily data
+  sub_8F8C88(*(_DWORD *)(a1 + 16), a2);         // prob conf data
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 76))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 28));
+  if ( *(int *)(a1 + 28) >= 1 )
+  {
+    v4 = 0;
+    do
+    {
+      v5 = *(_DWORD *)(*(_DWORD *)(a1 + 20) + 4 * v4);
+      v6 = (*(int (__fastcall **)(int))(*(_DWORD *)v5 + 8))(v5);
+      (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v6);
+      (*(void (__fastcall **)(int, int))(*(_DWORD *)v5 + 12))(v5, a2);
+      ++v4;
+    }
+    while ( v4 < *(_DWORD *)(a1 + 28) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 44));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 40));
+  v7 = *(_DWORD *)(a1 + 36);
+  if ( v7 )
+  {
+    (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(v7 + 8));
+    v8 = *(_DWORD **)(a1 + 36);
+    if ( (int)v8[2] >= 1 )
+    {
+      v9 = 0;
+      do
+      {
+        sub_2E061C(*(_DWORD *)(*v8 + 4 * v9), a2);// gatcha drop?
+        v8 = *(_DWORD **)(a1 + 36);
+        ++v9;
+      }
+      while ( v9 < v8[2] );
+    }
+  }
+  else
+  {
+    (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, 0);
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 68));
+  if ( *(int *)(a1 + 68) >= 1 )
+  {
+    v10 = 0;
+    do
+      writeDataReference((int *)a2, *(_DWORD *)(*(_DWORD *)(a1 + 60) + 4 * v10++));
+    while ( v10 < *(_DWORD *)(a1 + 68) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 80));
+  if ( *(int *)(a1 + 80) >= 1 )
+  {
+    v11 = 0;
+    do
+    {
+      v12 = *(int **)(*(_DWORD *)(a1 + 72) + 4 * v11);
+      writeDataReference((int *)a2, *v12);
+      writeDataReference((int *)a2, v12[1]);
+      (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 40))(a2, v12[2]);
+      ++v11;
+    }
+    while ( v11 < *(_DWORD *)(a1 + 80) );
+  }
+  (*(void (__fastcall **)(int, bool))(*(_DWORD *)a2 + 32))(a2, *(_DWORD *)(a1 + 100) != 0);
+  result = *(_DWORD *)(a1 + 100);
+  if ( result )
+    return sub_62DEE4(result, a2);
+  return result;
+}

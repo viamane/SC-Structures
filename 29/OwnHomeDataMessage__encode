@@ -1,0 +1,7 @@
+int __fastcall sub_343BA0(int a1)
+{
+  PiranhaMessage();
+  ClientHome(*(_DWORD *)(a1 + 80), a1 + 8);
+  (*(void (__fastcall **)(_DWORD, int))(**(_DWORD **)(a1 + 84) + 12))(*(_DWORD *)(a1 + 84), a1 + 8);
+  return writeVInt(a1 + 8, *(_DWORD *)(a1 + 88));
+}

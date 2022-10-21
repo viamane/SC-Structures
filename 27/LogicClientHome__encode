@@ -1,0 +1,63 @@
+int __fastcall LogicClientHome6encode(int a1, int a2)
+{
+  int v4; // r7
+  int v5; // r6
+  int v6; // r0
+  int v7; // r0
+  _DWORD *v8; // r0
+  int v9; // r6
+  int result; // r0
+  int i; // r6
+
+  LogicDailyData6encode(*(_DWORD *)(a1 + 12), a2);
+  LogicConfData(*(_DWORD *)(a1 + 16), a2);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 72))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 28));
+  if ( *(int *)(a1 + 28) >= 1 )
+  {
+    v4 = 0;
+    do
+    {
+      v5 = *(_DWORD *)(*(_DWORD *)(a1 + 20) + 4 * v4);
+      v6 = (*(int (__fastcall **)(int))(*(_DWORD *)v5 + 8))(v5);
+      (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v6);
+      (*(void (__fastcall **)(int, int))(*(_DWORD *)v5 + 12))(v5, a2);
+      ++v4;
+    }
+    while ( v4 < *(_DWORD *)(a1 + 28) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 44));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 40));
+  v7 = *(_DWORD *)(a1 + 36);
+  if ( v7 )
+  {
+    (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(v7 + 8));
+    v8 = *(_DWORD **)(a1 + 36);
+    if ( (int)v8[2] >= 1 )
+    {
+      v9 = 0;
+      do
+      {
+        GatchDrop(*(_DWORD **)(*v8 + 4 * v9), a2);
+        v8 = *(_DWORD **)(a1 + 36);
+        ++v9;
+      }
+      while ( v9 < v8[2] );
+    }
+  }
+  else
+  {
+    (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, 0);
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 68));
+  result = *(_DWORD *)(a1 + 68);
+  if ( result >= 1 )
+  {
+    for ( i = 0; i < result; ++i )
+    {
+      writeDataReference(a2, *(_DWORD *)(*(_DWORD *)(a1 + 60) + 4 * i));
+      result = *(_DWORD *)(a1 + 68);
+    }
+  }
+  return result;
+}

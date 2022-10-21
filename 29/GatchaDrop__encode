@@ -1,0 +1,10 @@
+int __fastcall GatchaDrop(_DWORD *a1, int a2)
+{
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, a1[1]);
+  writeDataReference(a2, a1[2]);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *a1);
+  writeDataReference(a2, a1[3]);
+  writeDataReference(a2, a1[4]);
+  writeDataReference(a2, a1[5]);
+  return (*(int (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, a1[6]);
+}

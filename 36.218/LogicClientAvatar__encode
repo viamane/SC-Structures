@@ -1,0 +1,111 @@
+int __fastcall ZNK17LogicClientAvatar6encodeEP15ChecksumEncoder(int a1, int a2)
+{
+  _DWORD *v4; // r7
+  int v5; // r6
+  int i; // r5
+  _DWORD *v7; // r7
+  int v8; // r6
+  int j; // r5
+  _DWORD *v10; // r7
+  int v11; // r6
+  int k; // r5
+  _DWORD *v13; // r7
+  int v14; // r6
+  int m; // r5
+  _DWORD *v16; // r7
+  int v17; // r6
+  int n; // r5
+  _DWORD *v19; // r7
+  int v20; // r6
+  int ii; // r5
+  _DWORD *v22; // r7
+  int v23; // r6
+  int jj; // r5
+  _DWORD *v25; // r7
+  int v26; // r6
+  int kk; // r5
+
+  ZN16ByteStreamHelper15encodeLogicLongEP15ChecksumEncoderPK9LogicLong(a2, a1 + 16);
+  ZN16ByteStreamHelper15encodeLogicLongEP15ChecksumEncoderPK9LogicLong(a2, a1 + 24);
+  ZN16ByteStreamHelper15encodeLogicLongEP15ChecksumEncoderPK9LogicLong(a2, a1 + 32);
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 16))(a2, a1 + 40);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 136));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 36))(a2, *(_DWORD *)(a1 + 140));
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, 8);
+  v4 = *(_DWORD **)(a1 + 56);
+  v5 = v4[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v5);
+  if ( v5 >= 1 )
+  {
+    for ( i = 0; i != v5; ++i )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v4 + 4 * i), a2);
+  }
+  v7 = *(_DWORD **)(a1 + 60);
+  v8 = v7[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v8);
+  if ( v8 > 0 )
+  {
+    for ( j = 0; j != v8; ++j )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v7 + 4 * j), a2);
+  }
+  v10 = *(_DWORD **)(a1 + 64);
+  v11 = v10[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v11);
+  if ( v11 >= 1 )
+  {
+    for ( k = 0; k != v11; ++k )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v10 + 4 * k), a2);
+  }
+  v13 = *(_DWORD **)(a1 + 68);
+  v14 = v13[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v14);
+  if ( v14 >= 1 )
+  {
+    for ( m = 0; m != v14; ++m )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v13 + 4 * m), a2);
+  }
+  v16 = *(_DWORD **)(a1 + 72);
+  v17 = v16[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v17);
+  if ( v17 >= 1 )
+  {
+    for ( n = 0; n != v17; ++n )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v16 + 4 * n), a2);
+  }
+  v19 = *(_DWORD **)(a1 + 76);
+  v20 = v19[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v20);
+  if ( v20 >= 1 )
+  {
+    for ( ii = 0; ii != v20; ++ii )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v19 + 4 * ii), a2);
+  }
+  v22 = *(_DWORD **)(a1 + 80);
+  v23 = v22[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v23);
+  if ( v23 >= 1 )
+  {
+    for ( jj = 0; jj != v23; ++jj )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v22 + 4 * jj), a2);
+  }
+  v25 = *(_DWORD **)(a1 + 84);
+  v26 = v25[2];
+  (*(void (__fastcall **)(int, int))(*(_DWORD *)a2 + 64))(a2, v26);
+  if ( v26 >= 1 )
+  {
+    for ( kk = 0; kk != v26; ++kk )
+      ZNK13LogicDataSlot6encodeEP15ChecksumEncoder(*(_DWORD *)(*v25 + 4 * kk), a2);
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 96));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 100));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 88));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 92));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 104));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 112));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 116));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 120));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 124));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 128));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 132));
+  return (*(int (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 144));
+}

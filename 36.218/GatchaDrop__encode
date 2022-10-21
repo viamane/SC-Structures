@@ -1,0 +1,11 @@
+int __fastcall ZN10GatchaDrop6encodeEP15ChecksumEncoder(_DWORD *a1, int a2)
+{
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, a1[1]);
+  ZN16ByteStreamHelper18writeDataReferenceEP15ChecksumEncoderPK9LogicData(a2, a1[2]);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *a1);
+  ZN16ByteStreamHelper18writeDataReferenceEP15ChecksumEncoderPK9LogicData(a2, a1[3]);
+  ZN16ByteStreamHelper18writeDataReferenceEP15ChecksumEncoderPK9LogicData(a2, a1[4]);
+  ZN16ByteStreamHelper18writeDataReferenceEP15ChecksumEncoderPK9LogicData(a2, a1[5]);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, a1[6]);
+  return (*(int (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, a1[7]);
+}

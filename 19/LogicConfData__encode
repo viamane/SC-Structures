@@ -1,0 +1,84 @@
+int __fastcall ConfData(int a1, int a2)
+{
+  int v4; // r6
+  int v5; // r6
+  int v6; // r6
+  int v7; // r6
+  int result; // r0
+  int i; // r6
+
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)a1);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 4));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 8));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 12));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 16));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 20));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 24));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 28));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 32));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 36));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 40));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 44));
+  writeArrayVInt(a2, a1 + 48);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 68));
+  if ( *(int *)(a1 + 68) >= 1 )
+  {
+    v4 = 0;
+    do
+      sub_4E0EA0(*(_DWORD *)(*(_DWORD *)(a1 + 60) + 4 * v4++), a2);
+    while ( v4 < *(_DWORD *)(a1 + 68) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 80));
+  if ( *(int *)(a1 + 80) >= 1 )
+  {
+    v5 = 0;
+    do
+      sub_BC9F0(*(_DWORD *)(*(_DWORD *)(a1 + 72) + 4 * v5++), a2);
+    while ( v5 < *(_DWORD *)(a1 + 80) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 92));
+  if ( *(int *)(a1 + 92) >= 1 )
+  {
+    v6 = 0;
+    do
+      sub_BC9F0(*(_DWORD *)(*(_DWORD *)(a1 + 84) + 4 * v6++), a2);
+    while ( v6 < *(_DWORD *)(a1 + 92) );
+  }
+  writeArrayVInt(a2, a1 + 96);
+  writeArrayVInt(a2, a1 + 108);
+  writeArrayVInt(a2, a1 + 120);
+  writeArrayVInt(a2, a1 + 132);
+  writeArrayVInt(a2, a1 + 144);
+  writeArrayVInt(a2, a1 + 156);
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 168));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 172));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 176));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 180));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 184));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 188));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 192));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 193));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 194));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 196));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 200));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 32))(a2, *(unsigned __int8 *)(a1 + 204));
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 216));
+  if ( *(int *)(a1 + 216) >= 1 )
+  {
+    v7 = 0;
+    do
+      sub_25CBC4(*(_DWORD *)(*(_DWORD *)(a1 + 208) + 4 * v7++), a2);
+    while ( v7 < *(_DWORD *)(a1 + 216) );
+  }
+  (*(void (__fastcall **)(int, _DWORD))(*(_DWORD *)a2 + 64))(a2, *(_DWORD *)(a1 + 228));
+  result = *(_DWORD *)(a1 + 228);
+  if ( result >= 1 )
+  {
+    for ( i = 0; i < result; ++i )
+    {
+      sub_3AB400(*(_DWORD **)(*(_DWORD *)(a1 + 220) + 4 * i), a2);
+      result = *(_DWORD *)(a1 + 228);
+    }
+  }
+  return result;
+}
